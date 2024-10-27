@@ -20,6 +20,11 @@ val modrinth_id: String? by project
 val curse_id: String? by project
 
 repositories {
+    maven("https://maven.wispforest.io/releases")
+    maven("https://maven.su5ed.dev/releases")
+    maven("https://maven.fabricmc.net")
+    maven("https://maven.shedaniel.me/")
+
     maven("https://teamvoided.org/releases")
     maven("https://maven.terraformersmc.com/") { name = "Terraformers" }
     mavenCentral()
@@ -43,6 +48,8 @@ dependencies {
 
     modCompileOnly("${libs.emi.get()}:api")
     modLocalRuntime(libs.emi)
+
+    modImplementation(libs.accessories)
 }
 
 loom {

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "amount": 1,
+  "operation": "set",
+  "order": 1001,
+  "icon": "accessories:gui/slot/hat",
+  "validators": [
+    "accessories:all"
+  ]
+}
